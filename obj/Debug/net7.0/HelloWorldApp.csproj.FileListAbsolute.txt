@@ -1,0 +1,15 @@
+/home/azureuser/HelloWorldApp/bin/Debug/net7.0/HelloWorldApp
+/home/azureuser/HelloWorldApp/bin/Debug/net7.0/HelloWorldApp.deps.json
+/home/azureuser/HelloWorldApp/bin/Debug/net7.0/HelloWorldApp.runtimeconfig.json
+/home/azureuser/HelloWorldApp/bin/Debug/net7.0/HelloWorldApp.dll
+/home/azureuser/HelloWorldApp/bin/Debug/net7.0/HelloWorldApp.pdb
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.csproj.AssemblyReference.cache
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.AssemblyInfoInputs.cache
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.AssemblyInfo.cs
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.csproj.CoreCompileInputs.cache
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.dll
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/refint/HelloWorldApp.dll
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.pdb
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/HelloWorldApp.genruntimeconfig.cache
+/home/azureuser/HelloWorldApp/obj/Debug/net7.0/ref/HelloWorldApp.dll
