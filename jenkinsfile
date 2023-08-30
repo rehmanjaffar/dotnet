@@ -1,0 +1,43 @@
+pipeline { 
+    agent any 
+    stages {
+        stage('Clean workspace') { 
+            steps { 
+                script { 
+                    deleteDir() 
+                } 
+            } 
+        } 
+        stage('Checkout') { 
+            steps { 
+                script { 
+                    // Start the SSH agent 
+                    sshagent(credentials: ['c78c0348-18f0-4d31-ae84-4467c1180f2a']) { 
+                        // Manually add the host key to known hosts 
+                        sh 'ssh-keyscan github.com >> ~/.ssh/known_hosts' 
+                        // Run your Git commands here 
+                        sh 'git clone git@github.com:rehmanjaffar/dotnet.git' 
+                    } 
+                } 
+            } 
+        } 
+        stage('Build Docker Image') { 
+            steps { 
+                dir('dotnet') { 
+                    script { 
+                        sh 'docker build -t dot-net .' 
+                    } 
+                } 
+            } 
+        } 
+        stage('Run Docker Container') { 
+            steps { 
+                dir('dotnet') { 
+                    script { 
+                    sh 'docker run -d -p 1234:1234 dot-net' 
+                    } 
+                } 
+            } 
+        } 
+    } 
+} 
